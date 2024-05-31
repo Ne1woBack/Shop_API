@@ -12,6 +12,7 @@ class OrderController extends Controller
 {
     public function createOrder(CreateOrderRequest $request)
     {
+        ////dasdasd
         $product=Product::findOrFail($request->product_id);
         if($this->checkQnt($request->qnt,$product->qnt))
         {
